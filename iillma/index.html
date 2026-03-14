@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IILLMA - Modern Educational Platform. Learn online with high-quality courses, videos, and PDF resources.">
+  <title>IILLMA | Modern Educational Platform</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand brand-font" href="index.html">IILLMA<span style="color: var(--secondary)">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="pdf.html">PDF</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a href="courses.html" class="btn btn-primary-custom d-block d-lg-inline-block">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 hero-content">
+          <span class="badge bg-primary bg-opacity-10 text-primary mb-3 py-2 px-3 rounded-pill text-uppercase" style="font-size: 0.8rem; letter-spacing: 1px;">Start Learning Today</span>
+          <h1 class="hero-title">Unlock Your Potential with <span>IILLMA</span></h1>
+          <p class="hero-subtitle">Access world-class education from anywhere. Master new skills with our interactive video lessons, expert instructors, and comprehensive study materials.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="courses.html" class="btn btn-primary-custom">Explore Courses <i class="bi bi-arrow-right ms-2"></i></a>
+            <a href="#benefits" class="btn btn-outline-custom">Learn More</a>
+          </div>
+          
+          <div class="d-flex align-items-center mt-5 gap-4">
+            <div class="d-flex">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-half text-warning"></i>
+            </div>
+            <div>
+              <span class="fw-bold fs-5">4.9/5</span>
+              <span class="text-muted d-block" style="font-size: 0.875rem;">From 10,000+ Reviews</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-image-wrapper">
+            <img src="images/hero.png" alt="Student learning online" class="hero-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="section-padding bg-white">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose IILLMA?</h2>
+        <p>Discover the advantages of our modern learning methodology designed for your success.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-icon"><i class="bi bi-laptop"></i></div>
+            <h4>Learn Anywhere</h4>
+            <p class="text-muted">Access our platform from any device. Study at your own pace from the comfort of your home or on the go.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-icon" style="background: rgba(249, 115, 22, 0.1); color: var(--secondary)"><i class="bi bi-journal-bookmark-fill"></i></div>
+            <h4>Expert Materials</h4>
+            <p class="text-muted">High-quality video lectures and downloadable PDF resources compiled by industry experts.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-icon" style="background: rgba(16, 185, 129, 0.1); color: #10b981"><i class="bi bi-award"></i></div>
+            <h4>Earn Certificates</h4>
+            <p class="text-muted">Get recognized for your outstanding achievements. Receive official certificates upon course completion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Courses Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-5">
+        <div class="section-title text-start mb-0">
+          <h2>Featured Courses</h2>
+          <p>Explore our most popular programs and start your journey.</p>
+        </div>
+        <a href="courses.html" class="btn btn-outline-custom d-none d-md-inline-block">View All Courses</a>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Course 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="modern-card">
+            <div class="card-img-wrapper">
+              <span class="card-badge">Bestseller</span>
+              <img src="images/course1.png" class="card-img-top" alt="Web Development Mastery">
+            </div>
+            <div class="modern-card-body">
+              <div class="card-meta">
+                <span><i class="bi bi-journal-text"></i> 12 Modules</span>
+                <span><i class="bi bi-clock"></i> 48 Hours</span>
+              </div>
+              <h3 class="modern-card-title">Full-Stack Web Development Mastery</h3>
+              <p class="modern-card-text">Learn to build complete web applications using modern HTML, CSS, JavaScript, and Node.js from scratch.</p>
+              <div class="card-footer-custom">
+                <span class="course-price">$89.00</span>
+                <a href="courses.html" class="btn btn-primary-custom py-2 px-3" style="font-size: 0.875rem;">View Course</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Course 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="modern-card">
+            <div class="card-img-wrapper">
+              <span class="card-badge" style="background: #10b981;">New</span>
+              <img src="images/course2.png" class="card-img-top" alt="UI/UX Design Masterclass">
+            </div>
+            <div class="modern-card-body">
+              <div class="card-meta">
+                <span><i class="bi bi-journal-text"></i> 8 Modules</span>
+                <span><i class="bi bi-clock"></i> 32 Hours</span>
+              </div>
+              <h3 class="modern-card-title">Advanced UI/UX Design Masterclass</h3>
+              <p class="modern-card-text">Master Figma, user psychology, and modern interface design principles to create stunning applications.</p>
+              <div class="card-footer-custom">
+                <span class="course-price">$65.00</span>
+                <a href="courses.html" class="btn btn-primary-custom py-2 px-3" style="font-size: 0.875rem;">View Course</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Course 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="modern-card">
+            <div class="card-img-wrapper">
+              <span class="card-badge" style="background: var(--primary);">Popular</span>
+              <img src="images/course3.png" class="card-img-top" alt="Digital Marketing Strategy">
+            </div>
+            <div class="modern-card-body">
+              <div class="card-meta">
+                <span><i class="bi bi-journal-text"></i> 10 Modules</span>
+                <span><i class="bi bi-clock"></i> 40 Hours</span>
+              </div>
+              <h3 class="modern-card-title">Complete Digital Marketing Strategy</h3>
+              <p class="modern-card-text">Learn SEO, social media marketing, and data analytics to grow any business exponentially online.</p>
+              <div class="card-footer-custom">
+                <span class="course-price">$75.00</span>
+                <a href="courses.html" class="btn btn-primary-custom py-2 px-3" style="font-size: 0.875rem;">View Course</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 d-md-none">
+        <a href="courses.html" class="btn btn-outline-custom">View All Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Our Students Say</h2>
+        <p>Join thousands of happy learners who have transformed their careers using IILLMA.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="testimonial-card">
+            <i class="bi bi-quote quote-icon"></i>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"IILLMA completely changed my career path. The course material is top-notch and the instructors are very knowledgeable. I secured a job as a frontend developer within 3 months of graduation."</p>
+            <div class="client-info">
+              <div class="client-img bg-primary text-white d-flex align-items-center justify-content-center fs-4 fw-bold">S</div>
+              <div class="client-details">
+                <h5>Sarah Jenkins</h5>
+                <span>Web Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="testimonial-card">
+            <i class="bi bi-quote quote-icon"></i>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"The UI/UX design course is incredible. I loved how interactive everything was. The platform itself is a great example of excellent UX, highly recommend it to anyone!"</p>
+            <div class="client-info">
+              <div class="client-img bg-secondary text-white d-flex align-items-center justify-content-center fs-4 fw-bold">M</div>
+              <div class="client-details">
+                <h5>Michael Doe</h5>
+                <span>UX Designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="container pb-5">
+    <div class="cta-section">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8" style="z-index: 1;">
+          <h2 class="cta-title">Ready to Start Learning?</h2>
+          <p class="fs-5 mb-4 opacity-75">Join IILLMA today and get unlimited access to the best educational content.</p>
+          <a href="contact.html" class="btn btn-secondary-custom btn-lg">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand brand-font fs-3 text-white mb-3 d-inline-block" href="index.html">IILLMA<span style="color: var(--secondary)">.</span></a>
+          <p class="footer-text mt-3">We provide high-quality educational resources, expert-led courses, and comprehensive materials to help you achieve your goals and master new skills.</p>
+          <div class="social-links mt-4">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">All Courses</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="video.html">Video Lessons</a></li>
+            <li><a href="pdf.html">PDF Materials</a></li>
+            <li><a href="#">FAQ & Support</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Contact Info</h4>
+          <ul class="footer-links" style="color: var(--gray-light)">
+            <li class="d-flex mb-3"><i class="bi bi-geo-alt text-secondary me-3 mt-1 fs-5"></i> 123 Education Lane, Tech City, 10010</li>
+            <li class="d-flex mb-3"><i class="bi bi-telephone text-secondary me-3 mt-1 fs-5"></i> +1 (234) 567-8900</li>
+            <li class="d-flex mb-3"><i class="bi bi-envelope text-secondary me-3 mt-1 fs-5"></i> support@iillma.edu</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; <span id="currentYear"></span> IILLMA Educational Platform. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

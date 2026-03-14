@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Watch high-quality educational videos on IILLMA.">
+  <title>Video Library | IILLMA</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand brand-font" href="index.html">IILLMA<span style="color: var(--secondary)">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="pdf.html">PDF</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a href="courses.html" class="btn btn-primary-custom d-block d-lg-inline-block">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header position-relative overflow-hidden">
+    <div class="container position-relative z-1">
+      <h1 class="brand-font">Video Library</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mt-3">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Video</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Main Video Player -->
+        <div class="col-lg-8">
+          <div class="video-player-wrapper mb-4">
+            <!-- Embedding a realistic placeholder video or iframe -->
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top:0; left:0; width:100%; height:100%;"></iframe>
+          </div>
+          
+          <div class="bg-white p-4 rounded-3 shadow-sm border border-light">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h2 class="fs-4 mb-0">Introduction to Web Development</h2>
+              <button class="btn btn-outline-custom btn-sm"><i class="bi bi-share me-1"></i> Share</button>
+            </div>
+            <div class="text-muted mb-3 fs-6">
+              <i class="bi bi-eye me-1"></i> 12,450 views &bull; <i class="bi bi-clock-history me-1"></i> Published 2 days ago
+            </div>
+            <hr>
+            <div class="d-flex align-items-center mt-3 mb-4">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3" style="width: 50px; height: 50px; font-size: 1.25rem;">J</div>
+              <div>
+                <h5 class="mb-0 fs-6">John Doe</h5>
+                <span class="text-muted" style="font-size: 0.875rem;">Senior Developer</span>
+              </div>
+              <button class="btn btn-secondary-custom btn-sm ms-auto rounded-pill px-3">Subscribe</button>
+            </div>
+            <p class="text-secondary">In this comprehensive introduction, we'll cover the basics of modern web development, starting from HTML structures, moving onto CSS styling, and briefly touching on JavaScript interactivity.</p>
+          </div>
+        </div>
+        
+        <!-- Video Playlist / Thumbnails Grid -->
+        <div class="col-lg-4">
+          <h4 class="mb-4 fs-5 font-weight-bold">Up Next</h4>
+          
+          <div class="d-flex flex-column gap-4">
+            <!-- Video Item 1 -->
+            <div class="d-flex gap-3 align-items-start">
+              <div class="video-thumbnail w-50 flex-shrink-0">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=300&q=80" alt="Video thumbnail">
+                <div class="play-icon" style="width: 30px; height: 30px; font-size: 1rem;"><i class="bi bi-play-fill text-primary"></i></div>
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 m-1 rounded" style="font-size: 0.75rem;">14:20</span>
+              </div>
+              <div class="video-info py-0">
+                <h5 class="fs-6 lh-sm mb-1 text-dark" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">CSS Grid & Flexbox Masterclass</h5>
+                <p class="mb-1" style="font-size: 0.8rem;">John Doe</p>
+                <p style="font-size: 0.75rem;">8k views &bull; 1 week ago</p>
+              </div>
+            </div>
+
+            <!-- Video Item 2 -->
+            <div class="d-flex gap-3 align-items-start">
+              <div class="video-thumbnail w-50 flex-shrink-0">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&q=80" alt="Video thumbnail">
+                <div class="play-icon" style="width: 30px; height: 30px; font-size: 1rem;"><i class="bi bi-play-fill text-primary"></i></div>
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 m-1 rounded" style="font-size: 0.75rem;">25:10</span>
+              </div>
+              <div class="video-info py-0">
+                <h5 class="fs-6 lh-sm mb-1 text-dark" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">JavaScript Promises and Async/Await</h5>
+                <p class="mb-1" style="font-size: 0.8rem;">Sarah Jenkins</p>
+                <p style="font-size: 0.75rem;">15k views &bull; 3 weeks ago</p>
+              </div>
+            </div>
+
+            <!-- Video Item 3 -->
+            <div class="d-flex gap-3 align-items-start">
+              <div class="video-thumbnail w-50 flex-shrink-0">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=300&q=80" alt="Video thumbnail">
+                <div class="play-icon" style="width: 30px; height: 30px; font-size: 1rem;"><i class="bi bi-play-fill text-primary"></i></div>
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 m-1 rounded" style="font-size: 0.75rem;">42:05</span>
+              </div>
+              <div class="video-info py-0">
+                <h5 class="fs-6 lh-sm mb-1 text-dark" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">React Hooks Complete Guide</h5>
+                <p class="mb-1" style="font-size: 0.8rem;">CodeMaster</p>
+                <p style="font-size: 0.75rem;">22k views &bull; 1 month ago</p>
+              </div>
+            </div>
+            
+            <!-- Video Item 4 -->
+            <div class="d-flex gap-3 align-items-start">
+              <div class="video-thumbnail w-50 flex-shrink-0">
+                <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=300&q=80" alt="Video thumbnail">
+                <div class="play-icon" style="width: 30px; height: 30px; font-size: 1rem;"><i class="bi bi-play-fill text-primary"></i></div>
+                <span class="position-absolute bottom-0 end-0 bg-dark text-white px-1 m-1 rounded" style="font-size: 0.75rem;">08:30</span>
+              </div>
+              <div class="video-info py-0">
+                <h5 class="fs-6 lh-sm mb-1 text-dark" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">UI Design Best Practices</h5>
+                <p class="mb-1" style="font-size: 0.8rem;">Michael Doe</p>
+                <p style="font-size: 0.75rem;">5k views &bull; 2 days ago</p>
+              </div>
+            </div>
+
+            <button class="btn btn-outline-custom w-100 mt-2">View Full Playlist <i class="bi bi-chevron-down ms-1"></i></button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand brand-font fs-3 text-white mb-3 d-inline-block" href="index.html">IILLMA<span style="color: var(--secondary)">.</span></a>
+          <p class="footer-text mt-3">We provide high-quality educational resources, expert-led courses, and comprehensive materials to help you achieve your goals and master new skills.</p>
+          <div class="social-links mt-4">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">All Courses</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="video.html">Video Lessons</a></li>
+            <li><a href="pdf.html">PDF Materials</a></li>
+            <li><a href="#">FAQ & Support</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Contact Info</h4>
+          <ul class="footer-links" style="color: var(--gray-light)">
+            <li class="d-flex mb-3"><i class="bi bi-geo-alt text-secondary me-3 mt-1 fs-5"></i> 123 Education Lane, Tech City, 10010</li>
+            <li class="d-flex mb-3"><i class="bi bi-telephone text-secondary me-3 mt-1 fs-5"></i> +1 (234) 567-8900</li>
+            <li class="d-flex mb-3"><i class="bi bi-envelope text-secondary me-3 mt-1 fs-5"></i> support@iillma.edu</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; <span id="currentYear"></span> IILLMA Educational Platform. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

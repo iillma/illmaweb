@@ -42,4 +42,26 @@ document.addEventListener("DOMContentLoaded", function () {
       link.classList.remove('active');
     }
   });
+
+  // Hero image slider (auto-roll)
+  const heroSlide = document.getElementById('heroSlide');
+  const heroImages = [
+    'images/hero.png',
+    'images/SpokenKids.webp',
+    // 'images/course2.png',
+    // 'images/course3.png'
+  ];heroSlide
+  let heroIndex = 0;
+
+  const rotateHeroImage = () => {
+    if (!heroSlide) return;
+    heroSlide.classList.add('fade');
+    setTimeout(() => {
+      heroIndex = (heroIndex + 1) % heroImages.length;
+      heroSlide.src = heroImages[heroIndex];
+      heroSlide.classList.remove('fade');
+    }, 600);
+  };
+
+  setInterval(rotateHeroImage, 4500);
 });

@@ -64,4 +64,44 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   setInterval(rotateHeroImage, 4500);
+
+  // Playlist video switching functionality
+  const playlistItems = document.querySelectorAll('.playlist-item');
+  const mainVideoIframe = document.querySelector('.video-player-wrapper iframe');
+  const titleElement = document.querySelector('.videoditailse h4');
+  const viewsSpan = document.querySelector('.videoditailse .text-muted span:first-child');
+  const dateSpan = document.querySelector('.videoditailse .text-muted span:last-child');
+
+  if (playlistItems.length > 0 && mainVideoIframe) {
+    playlistItems.forEach(item => {
+      item.addEventListener('click', function() {
+        // Remove active class from all items
+        playlistItems.forEach(i => i.classList.remove('active'));
+        
+        // Add active class to clicked item
+        this.classList.add('active');
+        
+        // Get video URL and update iframe
+        const videoUrl = this.getAttribute('data-video-url');
+        if (videoUrl) {
+          mainVideoIframe.src = videoUrl;
+        }
+
+        // Update video details
+        const title = this.getAttribute('data-title');
+        const views = this.getAttribute('data-views');
+        const date = this.getAttribute('data-date');
+
+        if (title && titleElement) {
+          titleElement.textContent = title;
+        }
+        if (views && viewsSpan) {
+          viewsSpan.innerHTML = '<i class="bi bi-eye me-1"></i> ' + views;
+        }
+        if (date && dateSpan) {
+          dateSpan.innerHTML = '<i class="bi bi-calendar3 me-1"></i> ' + date;
+        }
+      });
+    });
+  }
 });

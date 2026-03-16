@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IILLMA - Modern Educational Platform. Learn online with high-quality courses, videos, and PDF resources.">
+  <title>IILLMA | Games</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Games page overrides */
+    body.games-page {
+      min-height: 100vh;
+      background: linear-gradient(135deg, rgba(239, 246, 255, 0.95), rgba(224, 242, 254, 0.95));
+    }
+
+    .games-header {
+      padding: 4rem 0 2rem;
+    }
+
+    .games-header .lead {
+      max-width: 680px;
+      margin: 0 auto;
+      color: rgba(15, 23, 42, 0.75);
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: var(--white);
+      color: var(--dark);
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      cursor: pointer;
+      transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .game {
+      display: none;
+      background: var(--white);
+      color: var(--dark);
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+
+    .game button {
+      background: var(--primary);
+      border-radius: var(--radius-md);
+      padding: 0.75rem 1.5rem;
+      border: none;
+      color: var(--white);
+      transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+      margin: 0.5rem;
+    }
+
+    .game button:hover {
+      background: var(--primary-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Missing Letter special style */
+    .missing-word {
+      display: inline-flex;
+      gap: 0.5rem;
+      justify-content: center;
+      font-size: 2.25rem;
+      font-weight: 700;
+    }
+
+    .missing-letter {
+      width: 3rem;
+      height: 3rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.75rem;
+      background: rgba(59, 130, 246, 0.15);
+      border: 2px dashed rgba(59, 130, 246, 0.5);
+      color: var(--dark);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .missing-letter.filled {
+      background: rgba(59, 130, 246, 0.25);
+      border-style: solid;
+      color: var(--primary);
+    }
+
+    .missing-letter:hover {
+      transform: translateY(-2px);
+      background: rgba(59, 130, 246, 0.3);
+    }
+  </style>
+</head>
+
+<body class="games-page">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand brand-font" href="index.html">IILLMA<span style="color: var(--secondary)">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="video.html">Video</a></li>
+          <li class="nav-item"><a class="nav-link" href="pdf.html">PDF</a></li>
+          <li class="nav-item"><a class="nav-link" href="phonics.html">Phonics</a></li>
+          <li class="nav-item"><a class="nav-link active" href="games.html">Games</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a href="contact.html" class="btn btn-primary-custom d-block d-lg-inline-block">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="page-header position-relative overflow-hidden">
+    <div class="container position-relative z-1">
+      <h1 class="brand-font">Games</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mt-3">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Games</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="position-absolute top-0 end-0 p-5 opacity-25" style="transform: translate(30%, -30%); background: radial-gradient(circle, var(--primary-light) 0%, transparent 70%); width: 400px; height: 400px; border-radius: 50%;"></div>
+  </header>
+
+  <main>
+    <section class="games-header text-center">
+      <div class="container">
+        </div>
+    </section>
+
+    <section class="container mb-5">
+      <div class="menu">
+        <div class="card" onclick="openGame('listen')">🎯 Listen & Choose</div>
+        <div class="card" onclick="openGame('builder')">🧩 Word Builder</div>
+        <div class="card" onclick="openGame('missing')">🔤 Missing Letter</div>
+      </div>
+    </section>
+
+    <section class="container mb-5">
+      <div id="gameArea" class="game">
+        <h2 id="gameTitle" class="h4 mb-3"></h2>
+        <p id="level" class="mb-4"></p>
+        <div id="content"></div>
+        <div class="text-center mt-4">
+          <button onclick="nextLevel()">Next Level</button>
+          <button onclick="back()">Back to Menu</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand brand-font fs-3 text-white mb-3 d-inline-block" href="index.html">IILLMA<span style="color: var(--secondary)">.</span></a>
+          <p class="footer-text mt-3">We provide high-quality educational resources, expert-led courses, and comprehensive materials to help you achieve your goals and master new skills.</p>
+          <div class="social-links mt-4">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">All Courses</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="video.html">Video Lessons</a></li>
+            <li><a href="pdf.html">PDF Materials</a></li>
+            <li><a href="#">FAQ & Support</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Contact Info</h4>
+          <ul class="footer-links" style="color: var(--gray-light)">
+            <li class="d-flex mb-3"><i class="bi bi-geo-alt text-secondary me-3 mt-1 fs-5"></i> 123 Education Lane, Tech City, 10010</li>
+            <li class="d-flex mb-3"><i class="bi bi-telephone text-secondary me-3 mt-1 fs-5"></i> +1 (234) 567-8900</li>
+            <li class="d-flex mb-3"><i class="bi bi-envelope text-secondary me-3 mt-1 fs-5"></i> support@iillma.edu</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; <span id="currentYear"></span> IILLMA Educational Platform. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    const words = [
+      "cat","bat","dog","sun","pen",
+      "hat","cup","pig","bed","fox"
+    ];
+
+    let currentGame = "";
+    let level = 0;
+
+    function openGame(game) {
+      currentGame = game;
+      level = 0;
+      document.querySelector(".menu").style.display = "none";
+      document.getElementById("gameArea").style.display = "block";
+      loadLevel();
+    }
+
+    function back() {
+      document.getElementById("gameArea").style.display = "none";
+      document.querySelector(".menu").style.display = "grid";
+    }
+
+    function loadLevel() {
+      let word = words[level];
+      document.getElementById("level").innerText = "Level " + (level + 1);
+
+      if (currentGame === "listen") {
+        document.getElementById("gameTitle").innerText = "🎯 Listen & Choose";
+        document.getElementById("content").innerHTML = `
+          <button onclick="playSound('${word}')">🔊 Play Sound</button>
+          <p class="mt-3">Choose the word:</p>
+          <div class="d-flex justify-content-center gap-3">
+            <button onclick="check('${word}', '${word}')">${word}</button>
+            <button onclick="check('${word}', 'dog')">dog</button>
+            <button onclick="check('${word}', 'cat')">cat</button>
+          </div>
+        `;
+      }
+
+      if (currentGame === "builder") {
+        document.getElementById("gameTitle").innerText = "🧩 Word Builder";
+        let letters = word.toUpperCase().split("").sort(() => 0.5 - Math.random());
+        document.getElementById("content").innerHTML = `
+          <p>Build the word:</p>
+          <div id="built" class="mb-3 p-3 bg-light rounded"></div>
+          <div class="d-flex flex-wrap justify-content-center gap-2">
+            ${letters.map(l => `<button onclick="addLetter('${l}')">${l}</button>`).join("")}
+          </div>
+        `;
+      }
+
+      if (currentGame === "missing") {
+        document.getElementById("gameTitle").innerText = "🔤 Missing Letter";
+        let missing = word[1];
+        const letters = word.split("").map((c, idx) => {
+          return idx === 1
+            ? `<span class="missing-letter" id="missingLetter">?</span>`
+            : `<span class="missing-letter filled">${c}</span>`;
+        }).join("");
+
+        document.getElementById("content").innerHTML = `
+          <div class="missing-word mb-4">${letters}</div>
+          <div class="d-flex justify-content-center gap-2">
+            <button onclick="check('${missing}', 'a')">A</button>
+            <button onclick="check('${missing}', 'o')">O</button>
+            <button onclick="check('${missing}', 'u')">U</button>
+          </div>
+        `;
+      }
+
+      // Add more games as needed
+    }
+
+    function playSound(word) {
+      let msg = new SpeechSynthesisUtterance(word);
+      speechSynthesis.speak(msg);
+    }
+
+    function check(correct, ans) {
+      if (correct === ans) {
+        alert("Correct!");
+      } else {
+        alert("Wrong, try again!");
+      }
+    }
+
+    function addLetter(l) {
+      document.getElementById("built").innerText += l;
+    }
+
+    function nextLevel() {
+      level++;
+      if (level >= words.length) {
+        alert("Game Finished!");
+        level = 0;
+      }
+      loadLevel();
+    }
+
+    // Footer year
+    document.getElementById("currentYear").innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -212,7 +212,7 @@ a {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-xl);
   animation: float 6s ease-in-out infinite;
-  max-width: 80%;
+  max-width: 95%;
   margin: 0 auto;
 }
 .hero-image {
